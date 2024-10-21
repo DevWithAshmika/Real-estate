@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Listings - RealEstateHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">RealEstateHub</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listings.html">Listings</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <h1>Explore Listings</h1>
+        <div class="filters">
+            <div class="filter">
+                <label for="price-range">Price Range</label>
+                <select id="price-range">
+                    <option value="any">Any</option>
+                    <option value="0-500000">Under $500,000</option>
+                    <option value="500000-1000000">$500,000 - $1,000,000</option>
+                    <option value="1000000+">Above $1,000,000</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label for="property-type">Property Type</label>
+                <select id="property-type">
+                    <option value="any">Any</option>
+                    <option value="house">House</option>
+                    <option value="apartment">Apartment</option>
+                    <option value="villa">Villa</option>
+                </select>
+            </div>
+            <div class="filter">
+                <label for="bedrooms">Bedrooms</label>
+                <select id="bedrooms">
+                    <option value="any">Any</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3+</option>
+                </select>
+            </div>
+            <button class="filter-btn">Apply Filters</button>
+        </div>
+    </section>
+
+    <!-- Listings Section -->
+    <section class="listings-page">
+        <div class="cards">
+            <!-- Individual Property Card -->
+            <div class="card">
+                <img src="abby-rurenko-uOYak90r4L0-unsplash.jpg" alt="House 1">
+                <h3>Luxury Villa</h3>
+                <p>$1,200,000 • 4 Beds • 3 Baths</p>
+                <button>View Details</button>
+            </div>
+            <div class="card">
+                <img src="ian-dooley-_-JR5TxKNSo-unsplash.jpg" alt="Apartment 1">
+                <h3>Modern Apartment</h3>
+                <p>$750,000 • 2 Beds • 2 Baths</p>
+                <button>View Details</button>
+            </div>
+            <!-- More cards go here -->
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <p>&copy; 2024 RealEstateHub - All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="listscript.js"></script>
+</body>
+</html>

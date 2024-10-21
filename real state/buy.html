@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealEstateHub - Buy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="logo">RealEstateHub</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="rent.html">Rent</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Buy Listings Section -->
+    <section class="listings">
+        <h2>Buy a Home</h2>
+        <p>Explore our wide range of homes for sale. Find the perfect property that suits your needs.</p>
+
+        <!-- Filter Options -->
+        <div class="filters">
+            <form>
+                <label for="location">Location:</label>
+                <select id="location" name="location">
+                    <option value="">Select Location</option>
+                    <option value="new-york">New York</option>
+                    <option value="los-angeles">Los Angeles</option>
+                    <option value="chicago">Chicago</option>
+                </select>
+
+                <label for="price">Price Range:</label>
+                <select id="price" name="price">
+                    <option value="">Select Price Range</option>
+                    <option value="50000-100000">$50,000 - $100,000</option>
+                    <option value="100000-200000">$100,000 - $200,000</option>
+                    <option value="200000-500000">$200,000 - $500,000</option>
+                </select>
+
+                <label for="bedrooms">Bedrooms:</label>
+                <select id="bedrooms" name="bedrooms">
+                    <option value="">Select Bedrooms</option>
+                    <option value="1">1 Bedroom</option>
+                    <option value="2">2 Bedrooms</option>
+                    <option value="3">3 Bedrooms</option>
+                </select>
+
+                <button type="submit">Filter</button>
+            </form>
+        </div>
+
+        <!-- Listings Grid -->
+        <div class="listing-grid">
+            <div class="card">
+                <img src="house1.jpg" alt="House 1">
+                <h3>Luxury Apartment in New York</h3>
+                <p>Price: $300,000</p>
+                <p>2 Bedrooms, 2 Bathrooms</p>
+                <button onclick="window.location.href='details.html'">View Details</button>
+            </div>
+
+            <div class="card">
+                <img src="house2.jpg" alt="House 2">
+                <h3>Spacious Family Home in Los Angeles</h3>
+                <p>Price: $500,000</p>
+                <p>3 Bedrooms, 3 Bathrooms</p>
+                <button onclick="window.location.href='details.html'">View Details</button>
+            </div>
+
+            <!-- Additional Property Listings -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 RealEstateHub - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
